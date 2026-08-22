@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#f0fdf4" rx="12"/>
+  <g transform="translate(100,100)">
+    <ellipse cx="0" cy="-10" rx="52" ry="60" fill="#4ade80" transform="rotate(-5)"/>
+    <line x1="0" y1="-58" x2="0" y2="35" stroke="#166534" stroke-width="2"/>
+    <!-- Powdery mildew patches -->
+    <ellipse cx="-10" cy="-25" rx="15" ry="10" fill="white" opacity="0.5"/>
+    <ellipse cx="12" cy="0" rx="12" ry="8" fill="white" opacity="0.4"/>
+    <ellipse cx="-5" cy="15" rx="10" ry="6" fill="white" opacity="0.45"/>
+    <circle cx="18" cy="-30" r="7" fill="#7c2d12" opacity="0.5"/>
+  </g>
+</svg>

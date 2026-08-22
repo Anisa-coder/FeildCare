@@ -15,22 +15,22 @@ export default function Navbar() {
               FeildCare
             </h1>
             <p className="text-[10px] sm:text-[11px] text-gray-400 font-medium">
-              Smart Crop Health Detection
+              Smart Tomato & Corn Health
             </p>
           </div>
         </Link>
 
-        {/* Desktop Nav Links (Hidden on Mobile) */}
+        {/* Desktop Nav Links (Home, Cure, About) */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
           <Link href="/" className="text-gray-900 font-semibold hover:text-green-800 transition">
             Home
           </Link>
-          <Link href="/about" className="hover:text-green-800 transition">
+          <Link href="/cure" className="hover:text-green-800 transition font-medium">
+            Cure
+          </Link>
+          <Link href="/about" className="hover:text-green-800 transition font-medium">
             About
           </Link>
-          <a href="/#how-it-works" className="hover:text-green-800 transition">
-            How It Works
-          </a>
         </nav>
 
         {/* Right Actions & Mobile Menu Toggle */}
@@ -64,17 +64,17 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
+                href="/cure"
+                className="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-green-50 hover:text-green-800 transition"
+              >
+                Cure & Remedies
+              </Link>
+              <Link
                 href="/about"
                 className="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-green-50 hover:text-green-800 transition"
               >
                 About FeildCare
               </Link>
-              <a
-                href="/#how-it-works"
-                className="block px-4 py-2.5 text-xs font-medium text-gray-600 hover:bg-green-50 hover:text-green-800 transition"
-              >
-                How It Works
-              </a>
             </div>
           </details>
         </div>

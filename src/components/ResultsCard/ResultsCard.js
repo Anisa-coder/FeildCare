@@ -1,5 +1,6 @@
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ResultsCard() {
   return (
@@ -20,10 +21,10 @@ export default function ResultsCard() {
       {/* Result Preview Box */}
       <div className="flex items-start space-x-4 mb-4">
         {/* Leaf Image */}
-        <div className="w-28 h-24 rounded-xl overflow-hidden flex-shrink-0 border border-gray-200">
+        <div className="w-28 h-24 rounded-xl overflow-hidden flex-shrink-0 border border-gray-200 relative bg-gray-50">
           <Image
             src="/diseased-leaf.jpg"
-            alt="Diseased crop leaf"
+            alt="Diseased tomato crop leaf"
             width={112}
             height={96}
             className="w-full h-full object-cover"
@@ -37,7 +38,7 @@ export default function ResultsCard() {
           <h4 className="font-bold text-gray-900 text-lg leading-tight">
             Early Blight
           </h4>
-          <p className="text-xs text-gray-500 mb-3">(Alternaria solani)</p>
+          <p className="text-xs text-gray-500 mb-3">Tomato (Alternaria solani)</p>
 
           <span className="text-[11px] uppercase tracking-wider text-gray-500 font-semibold block mb-0.5">
             Confidence Score
@@ -56,9 +57,9 @@ export default function ResultsCard() {
       <div className="mb-3">
         <h5 className="text-sm font-bold text-gray-800 mb-1">Symptoms</h5>
         <p className="text-xs text-gray-600 leading-relaxed">
-          Dark brown spots with concentric rings on older leaves.
+          Dark brown concentric target rings on older leaves.
           <br />
-          May cause yellowing and leaf drop.
+          May cause yellow halos, leaf drop, and reduced yield.
         </p>
       </div>
 
@@ -70,21 +71,32 @@ export default function ResultsCard() {
         <ul className="space-y-1.5 text-xs text-gray-600">
           <li className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-            <span>Remove and destroy infected leaves.</span>
+            <span>Remove and destroy lower infected tomato leaves.</span>
           </li>
           <li className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-            <span>Apply fungicide recommended for Early Blight.</span>
+            <span>Apply organic bio-fungicide or copper spray.</span>
           </li>
           <li className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-            <span>Ensure proper field drainage and aeration.</span>
+            <span>Switch to drip lines to keep canopy dry.</span>
           </li>
           <li className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-            <span>Monitor regularly and detect early.</span>
+            <span>Follow 14-day recovery protocol.</span>
           </li>
         </ul>
+
+        {/* Action Link to Dedicated Cure Page */}
+        <div className="mt-4 pt-3 border-t border-gray-100">
+          <Link
+            href="/cure"
+            className="w-full bg-green-800 hover:bg-green-900 text-white font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow-sm cursor-pointer"
+          >
+            <span>View Full Treatment & Cures</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </div>
   );

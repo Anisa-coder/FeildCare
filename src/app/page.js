@@ -8,7 +8,7 @@ export default function FeildCarePage() {
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <HeroSection />
         <StepsSection />
         <BottomBanner />

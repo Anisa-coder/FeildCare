@@ -17,14 +17,15 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 p-10 md:p-12 max-w-xl">
+      <div className="relative z-10 p-8 sm:p-10 md:p-12 max-w-xl">
+        <div className="inline-flex items-center space-x-2 bg-green-100/90 text-green-900 border border-green-300/80 px-3 py-1 rounded-full text-xs font-bold mb-3 backdrop-blur-xs">
+          <span>🍅 Tomato & 🌽 Corn AI Pathology</span>
+        </div>
         <h2 className="text-3xl md:text-4xl font-bold text-green-900 tracking-tight mb-3 leading-tight">
-          Early Crop Detection
+          Early Tomato & Corn Detection
         </h2>
-        <p className="text-gray-600 text-base leading-relaxed">
-          Upload a crop image, detect diseases early
-          <br />
-          and get accurate results.
+        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+          Upload a tomato or corn leaf image to detect blights, rusts, and leaf spots early and get instant verified cures.
         </p>
       </div>
     </section>

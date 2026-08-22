@@ -35,21 +35,35 @@ export default function UploadCard() {
       </p>
 
       {/* Sample Images Row */}
-      <div className="border border-gray-200 rounded-xl p-3">
-        <p className="text-xs font-semibold text-gray-700 mb-2">Sample Images</p>
+      <div className="border border-gray-200 rounded-xl p-3 bg-gray-50/50">
+        <div className="flex items-center justify-between mb-2">
+          <p className="text-xs font-semibold text-gray-700">Sample Leaf Tests</p>
+          <span className="text-[10px] text-green-800 font-medium bg-green-100 px-2 py-0.5 rounded">
+            Tomato & Corn
+          </span>
+        </div>
         <div className="grid grid-cols-4 gap-2">
-          {[1, 2, 3, 4].map((i) => (
+          {[
+            { id: 1, label: 'Tomato Early Blight' },
+            { id: 2, label: 'Tomato Late Blight' },
+            { id: 3, label: 'Corn Leaf Blight' },
+            { id: 4, label: 'Corn Rust' },
+          ].map((item) => (
             <div
-              key={i}
-              className="aspect-square bg-gray-200 rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-80 transition"
+              key={item.id}
+              className="aspect-square bg-gray-200 rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:border-green-600 transition relative group"
+              title={item.label}
             >
               <Image
-                src={`/sample-leaf-${i}.jpg`}
-                alt={`Sample leaf ${i}`}
+                src={`/sample-leaf-${item.id}.jpg`}
+                alt={item.label}
                 width={80}
                 height={80}
                 className="w-full h-full object-cover"
               />
+              <div className="absolute inset-x-0 bottom-0 bg-black/60 text-[8px] text-white text-center py-0.5 truncate px-0.5">
+                {item.id <= 2 ? '🍅' : '🌽'} {item.label.split(' ')[0]}
+              </div>
             </div>
           ))}
         </div>

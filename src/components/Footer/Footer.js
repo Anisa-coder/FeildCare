@@ -38,7 +38,12 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="hover:text-green-800 transition">
-                  Home
+                  Home (Scanner)
+                </Link>
+              </li>
+              <li>
+                <Link href="/cure" className="hover:text-green-800 transition">
+                  Cure & Remedies
                 </Link>
               </li>
               <li>
@@ -51,25 +56,21 @@ export default function Footer() {
                   Scan History
                 </Link>
               </li>
-              <li>
-                <a href="/#how-it-works" className="hover:text-green-800 transition">
-                  How It Works
-                </a>
-              </li>
             </ul>
           </div>
 
-          {/* Supported Crops & Diseases */}
+          {/* Supported Tomato & Corn Diseases */}
           <div>
             <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">
-              Detection Library
+              Tomato & Corn Library
             </h3>
             <ul className="space-y-2 text-xs text-gray-500">
-              <li>Early Blight (Alternaria)</li>
-              <li>Powdery Mildew</li>
-              <li>Target Spot & Leaf Rust</li>
-              <li>Bacterial Spot / Speck</li>
-              <li>Nutrient Chlorosis</li>
+              <li>🍅 Tomato Early Blight</li>
+              <li>🍅 Tomato Late Blight</li>
+              <li>🍅 Tomato Bacterial Spot</li>
+              <li>🌽 Corn Northern Leaf Blight</li>
+              <li>🌽 Corn Common Rust</li>
+              <li>🌽 Corn Gray Leaf Spot</li>
             </ul>
           </div>
 

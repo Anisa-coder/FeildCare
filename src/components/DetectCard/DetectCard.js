@@ -2,7 +2,7 @@ import { Search, Leaf } from 'lucide-react';
 
 export default function DetectCard() {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm relative flex flex-col justify-between">
+    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm relative flex flex-col justify-between h-full">
       {/* Step Header */}
       <div className="flex items-center space-x-3 mb-2">
         <span className="w-9 h-9 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center text-sm border border-green-200">
@@ -19,12 +19,9 @@ export default function DetectCard() {
       {/* Central Analysis Graphic */}
       <div className="flex flex-col items-center justify-center flex-1 my-6">
         <div className="relative mb-5 flex items-center justify-center">
-          {/* Subtle outer circular background */}
           <div className="w-24 h-24 rounded-full bg-green-50/70 border border-green-100 flex items-center justify-center">
-            {/* Magnifying glass with green leaf */}
             <div className="relative w-14 h-14 rounded-full border-4 border-green-700 flex items-center justify-center bg-white shadow-sm">
               <Leaf className="w-7 h-7 text-green-700 fill-green-600" />
-              {/* Magnifying glass handle */}
               <div className="absolute -bottom-3 -right-3 w-5 h-2 bg-green-700 rounded-full transform rotate-45" />
             </div>
           </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ResultsCard() {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col">
+    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col h-full">
       {/* Step Header */}
       <div className="flex items-center space-x-3 mb-4">
         <span className="w-9 h-9 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center text-sm border border-green-200">
@@ -21,10 +21,10 @@ export default function ResultsCard() {
       {/* Result Preview Box */}
       <div className="flex items-start space-x-4 mb-4">
         {/* Leaf Image */}
-        <div className="w-28 h-24 rounded-xl overflow-hidden flex-shrink-0 border border-gray-200 relative bg-gray-50">
+        <div className="w-28 h-24 rounded-xl overflow-hidden shrink-0 border border-gray-200 relative bg-gray-50">
           <Image
             src="/diseased-leaf.jpg"
-            alt="Diseased tomato crop leaf"
+            alt="Diseased crop leaf"
             width={112}
             height={96}
             className="w-full h-full object-cover"
@@ -38,7 +38,7 @@ export default function ResultsCard() {
           <h4 className="font-bold text-gray-900 text-lg leading-tight">
             Early Blight
           </h4>
-          <p className="text-xs text-gray-500 mb-3">Tomato (Alternaria solani)</p>
+          <p className="text-xs text-gray-500 mb-3">Crop leaf (Alternaria spp.)</p>
 
           <span className="text-[11px] uppercase tracking-wider text-gray-500 font-semibold block mb-0.5">
             Confidence Score
@@ -70,19 +70,19 @@ export default function ResultsCard() {
         </h5>
         <ul className="space-y-1.5 text-xs text-gray-600">
           <li className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-            <span>Remove and destroy lower infected tomato leaves.</span>
+            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+            <span>Remove and destroy visibly infected lower leaves.</span>
           </li>
           <li className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
             <span>Apply organic bio-fungicide or copper spray.</span>
           </li>
           <li className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
             <span>Switch to drip lines to keep canopy dry.</span>
           </li>
           <li className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
             <span>Follow 14-day recovery protocol.</span>
           </li>
         </ul>
@@ -93,7 +93,7 @@ export default function ResultsCard() {
             href="/cure"
             className="w-full bg-green-800 hover:bg-green-900 text-white font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition shadow-sm cursor-pointer"
           >
-            <span>View Full Treatment & Cures</span>
+            <span>View Full Report</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

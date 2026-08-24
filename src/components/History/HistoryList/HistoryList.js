@@ -5,7 +5,7 @@ const scanRecords = [
   {
     id: 'SCAN-2026-0891',
     image: '/diseased-leaf.jpg',
-    crop: 'Tomato Plant (Solanum lycopersicum)',
+    crop: 'Crop Leaf Sample (Field A-2)',
     disease: 'Early Blight',
     pathogen: 'Alternaria solani',
     date: 'Aug 21, 2026 • 14:32 PM',
@@ -84,7 +84,7 @@ export default function HistoryList() {
         >
           {/* Left: Leaf Thumbnail & Diagnosis */}
           <div className="flex items-start space-x-4 flex-1">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden flex-shrink-0 border border-gray-200 relative bg-gray-50">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden shrink-0 border border-gray-200 relative bg-gray-50">
               <Image
                 src={record.image}
                 alt={record.disease}

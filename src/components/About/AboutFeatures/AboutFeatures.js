@@ -5,7 +5,7 @@ const features = [
     icon: Cpu,
     title: 'Precision AI Vision Engine',
     description:
-      'Trained on hundreds of thousands of expert-verified agricultural images spanning tomato, soybean, potato, corn, and vegetable pathogens.',
+      'Trained on hundreds of thousands of expert-verified agricultural images spanning broad crop and vegetable disease categories.',
   },
   {
     icon: Zap,
@@ -47,7 +47,7 @@ export default function AboutFeatures() {
               key={i}
               className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex items-start space-x-4 hover:border-green-300 transition"
             >
-              <div className="p-3 bg-green-50 rounded-xl border border-green-200 text-green-700 flex-shrink-0">
+              <div className="p-3 bg-green-50 rounded-xl border border-green-200 text-green-700 shrink-0">
                 <Icon className="w-6 h-6" />
               </div>
               <div>

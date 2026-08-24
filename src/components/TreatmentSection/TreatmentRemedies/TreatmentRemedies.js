@@ -37,7 +37,7 @@ const remedies = [
     points: [
       'DO NOT place infected leaves or diseased plant debris into domestic or low-temperature compost piles.',
       'Seal diseased foliage in disposal bags and incinerate, solarize, or deeply bury at least 2 feet underground.',
-      'Enforce a strict 3-year crop rotation schedule avoiding other Solanaceae family members (tomatoes, potatoes, eggplants, peppers).',
+      'Enforce a strict 3-year crop rotation schedule and avoid planting closely related host crops back-to-back.',
       'Plant resistant or tolerant certified cultivars (e.g. Mountain Fresh Plus, Defiant PhR) for upcoming planting seasons.',
     ],
   },
@@ -68,7 +68,7 @@ export default function TreatmentRemedies() {
             >
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="p-2.5 bg-green-100 rounded-xl text-green-800 flex-shrink-0">
+                  <div className="p-2.5 bg-green-100 rounded-xl text-green-800 shrink-0">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h4 className="font-bold text-gray-900 text-sm sm:text-base">
@@ -79,7 +79,7 @@ export default function TreatmentRemedies() {
                 <ul className="space-y-2.5">
                   {remedy.points.map((pt, idx) => (
                     <li key={idx} className="flex items-start space-x-2 text-xs text-gray-600 leading-relaxed">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-green-700 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-green-700 shrink-0 mt-0.5" />
                       <span>{pt}</span>
                     </li>
                   ))}

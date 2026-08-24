@@ -25,7 +25,7 @@ export default function Footer() {
               FeildCare empowers farmers and agronomists with AI-powered instant crop disease detection, early warnings, and reliable agronomic recommendations to maximize crop yield.
             </p>
             <div className="flex items-center space-x-2 text-xs text-green-800 bg-green-50 px-3 py-1.5 rounded-lg border border-green-200 w-fit">
-              <ShieldCheck className="w-4 h-4 text-green-700 flex-shrink-0" />
+              <ShieldCheck className="w-4 h-4 text-green-700 shrink-0" />
               <span>Certified Plant Pathology Vision Models</span>
             </div>
           </div>
@@ -37,21 +37,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/" className="hover:text-green-800 transition">
-                  Home (Scanner)
-                </Link>
-              </li>
-              <li>
-                <Link href="/cure" className="hover:text-green-800 transition">
-                  Cure & Remedies
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-green-800 transition">
-                  About FeildCare
-                </Link>
-              </li>
-              <li>
                 <Link href="/history" className="hover:text-green-800 transition">
                   Scan History
                 </Link>
@@ -59,18 +44,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Supported Tomato & Corn Diseases */}
+          {/* Supported Crop Diseases */}
           <div>
             <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">
-              Tomato & Corn Library
+              Crop Disease Library
             </h3>
             <ul className="space-y-2 text-xs text-gray-500">
-              <li>🍅 Tomato Early Blight</li>
-              <li>🍅 Tomato Late Blight</li>
-              <li>🍅 Tomato Bacterial Spot</li>
-              <li>🌽 Corn Northern Leaf Blight</li>
-              <li>🌽 Corn Common Rust</li>
-              <li>🌽 Corn Gray Leaf Spot</li>
+              <li>Early Blight</li>
+              <li>Late Blight</li>
+              <li>Bacterial Leaf Spot</li>
+              <li>Powdery Mildew</li>
+              <li>Leaf Rust</li>
+              <li>Gray Leaf Spot</li>
             </ul>
           </div>
 

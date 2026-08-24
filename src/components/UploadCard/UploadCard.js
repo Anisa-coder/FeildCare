@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function UploadCard() {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm relative flex flex-col">
+    <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm relative flex flex-col h-full">
       {/* Step Header */}
       <div className="flex items-center space-x-3 mb-1">
         <span className="w-9 h-9 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center text-sm border border-green-200">
@@ -39,15 +39,15 @@ export default function UploadCard() {
         <div className="flex items-center justify-between mb-2">
           <p className="text-xs font-semibold text-gray-700">Sample Leaf Tests</p>
           <span className="text-[10px] text-green-800 font-medium bg-green-100 px-2 py-0.5 rounded">
-            Tomato & Corn
+            Multi-Crop
           </span>
         </div>
         <div className="grid grid-cols-4 gap-2">
           {[
-            { id: 1, label: 'Tomato Early Blight' },
-            { id: 2, label: 'Tomato Late Blight' },
-            { id: 3, label: 'Corn Leaf Blight' },
-            { id: 4, label: 'Corn Rust' },
+            { id: 1, label: 'Early Blight Sample' },
+            { id: 2, label: 'Late Blight Sample' },
+            { id: 3, label: 'Leaf Spot Sample' },
+            { id: 4, label: 'Rust Sample' },
           ].map((item) => (
             <div
               key={item.id}
@@ -62,7 +62,7 @@ export default function UploadCard() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 bg-black/60 text-[8px] text-white text-center py-0.5 truncate px-0.5">
-                {item.id <= 2 ? '🍅' : '🌽'} {item.label.split(' ')[0]}
+                {item.label.split(' ')[0]}
               </div>
             </div>
           ))}

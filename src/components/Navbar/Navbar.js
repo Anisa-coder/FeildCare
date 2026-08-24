@@ -1,4 +1,4 @@
-import { Leaf, History, Menu, X } from 'lucide-react';
+import { Leaf, History } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -15,25 +15,12 @@ export default function Navbar() {
               FeildCare
             </h1>
             <p className="text-[10px] sm:text-[11px] text-gray-400 font-medium">
-              Smart Tomato & Corn Health
+              Smart Crop Health
             </p>
           </div>
         </Link>
 
-        {/* Desktop Nav Links (Home, Cure, About) */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
-          <Link href="/" className="text-gray-900 font-semibold hover:text-green-800 transition">
-            Home
-          </Link>
-          <Link href="/cure" className="hover:text-green-800 transition font-medium">
-            Cure
-          </Link>
-          <Link href="/about" className="hover:text-green-800 transition font-medium">
-            About
-          </Link>
-        </nav>
-
-        {/* Right Actions & Mobile Menu Toggle */}
+        {/* Right Actions */}
         <div className="flex items-center space-x-2 sm:space-x-3">
           {/* History Button */}
           <Link
@@ -43,40 +30,6 @@ export default function Navbar() {
             <History className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             <span>History</span>
           </Link>
-
-          {/* Mobile Menu Dropdown (Pure CSS / Native HTML Disclosure - No Client Component required) */}
-          <details className="md:hidden group relative list-none">
-            <summary className="list-none cursor-pointer p-2 rounded-xl border border-gray-200 text-gray-700 hover:bg-gray-50 flex items-center justify-center [&::-webkit-details-marker]:hidden">
-              <Menu className="w-5 h-5 group-open:hidden" />
-              <X className="w-5 h-5 hidden group-open:block" />
-            </summary>
-
-            <div className="absolute right-0 mt-2 w-52 bg-white rounded-2xl border border-gray-200 shadow-xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-              <div className="px-4 py-2 border-b border-gray-100">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                  Navigation Menu
-                </span>
-              </div>
-              <Link
-                href="/"
-                className="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-green-50 hover:text-green-800 transition"
-              >
-                Home
-              </Link>
-              <Link
-                href="/cure"
-                className="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-green-50 hover:text-green-800 transition"
-              >
-                Cure & Remedies
-              </Link>
-              <Link
-                href="/about"
-                className="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-green-50 hover:text-green-800 transition"
-              >
-                About FeildCare
-              </Link>
-            </div>
-          </details>
         </div>
       </div>
     </header>

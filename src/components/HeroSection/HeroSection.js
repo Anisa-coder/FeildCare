@@ -9,6 +9,7 @@ export default function HeroSection() {
           src="/hero-field.jpg"
           alt="Green crop field background"
           fill
+          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1280px) calc(100vw - 3rem), 1232px"
           className="object-cover object-right"
           priority
         />

@@ -10,6 +10,7 @@ export default function AboutHero() {
           src="/hero-field.jpg"
           alt="Field background"
           fill
+          sizes="(min-width: 1280px) 616px, (min-width: 768px) 50vw, 0px"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-green-900 via-transparent to-transparent" />

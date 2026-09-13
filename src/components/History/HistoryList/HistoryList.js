@@ -89,6 +89,7 @@ export default function HistoryList() {
                 src={record.image}
                 alt={record.disease}
                 fill
+                sizes="(min-width: 640px) 96px, 80px"
                 className="object-cover"
               />
             </div>

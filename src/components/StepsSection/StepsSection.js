@@ -312,7 +312,16 @@ export default function StepsSection() {
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5">
               <div className="flex items-start gap-4 mb-4">
                 <div className="relative w-24 h-20 rounded-xl overflow-hidden border border-gray-200 shrink-0 bg-gray-50">
-                  {previewUrl && <Image src={previewUrl} alt="Uploaded crop leaf" fill unoptimized className="object-cover" />}
+                  {previewUrl && (
+                    <Image
+                      src={previewUrl}
+                      alt="Uploaded crop leaf"
+                      fill
+                      sizes="96px"
+                      unoptimized
+                      className="object-cover"
+                    />
+                  )}
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-[11px] uppercase tracking-wider text-gray-500 font-semibold">Detected Result</p>

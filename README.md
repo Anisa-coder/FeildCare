@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Start the FieldCare backend on port 8000, then run the development server:
 
 ```bash
 npm run dev
@@ -15,6 +15,15 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+The frontend sends crop images to `http://127.0.0.1:8000` by default. Set the
+server-side `BACKEND_URL` environment variable when the prediction API uses a
+different address:
+
+```powershell
+$env:BACKEND_URL="http://127.0.0.1:8000"
+npm run dev
+```
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

@@ -36,6 +36,7 @@ function responseIsPrediction(value) {
       typeof value.crop === 'string' &&
       typeof value.disease === 'string' &&
       typeof value.display_name === 'string' &&
+      typeof value.class_key === 'string' &&
       typeof value.confidence_percent === 'number',
   );
 }
@@ -363,7 +364,7 @@ export default function StepsSection() {
                   <RotateCcw className="w-4 h-4" />
                   <span>Take New Analysis Test</span>
                 </button>
-                <Link href="/cure" className="inline-flex items-center gap-2 text-xs font-semibold text-green-800 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg px-4 py-2.5">
+                <Link href={`/cure?disease=${encodeURIComponent(result.class_key)}`} className="inline-flex items-center gap-2 text-xs font-semibold text-green-800 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg px-4 py-2.5">
                   <span>View Full Report</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
